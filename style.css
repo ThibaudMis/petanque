@@ -30,6 +30,9 @@ text-align: center;
 .nom{
     width: 100px;
 }
+.pts{
+    width: 75px;
+}
 
 .joueur{
 backdrop-filter: blur(5px);
