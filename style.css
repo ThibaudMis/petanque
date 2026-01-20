@@ -1,4 +1,10 @@
-html {margin: 0px; height: 100%; overflow: hidden}
+html {
+    margin: 0px;
+     height: 100%;
+    overflow: hidden;
+    font-family: "Inter",sans-serif;
+    
+    }
 body{
     position: absolute;
 	left: 50%;
@@ -46,6 +52,11 @@ font-weight: bold;
 display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.next{text-align: center;
+    font-size: 1rem;
+
 }
 
 footer{
