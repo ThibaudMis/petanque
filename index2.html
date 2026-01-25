@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+ <head>
+   <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" type="text/css" href="style.css" />
+   <title> TOURNOI 2026 </title>
+ </head>
+ <body>
+
+
+
+	
+	<div id="classement" class="classement">
+		<div class="titre"><h3>CHAMPIONNAT DOUBLETTE 2026
+		</h3></div>
+
+		
+		<div class="joueur " id="Cedric/Nicolas" data-score="3">
+				<div class="nom"> Cédric Nicolas </div>
+				<div class="vic"> 3 </div>
+				<div class="pts"> 48 pts</div>
+		</div>
+
+		<div class="joueur " id="Eric/Oliver" data-score="0">
+				<div class="nom"> Eric  Oliver </div>
+				<div class="vic"> 0 </div>
+				<div class="pts"> 24 pts</div>
+		</div>
+
+		<div class="joueur " id="Franck/Jean Charles" data-score="2">
+				<div class="nom"> Jean Charles  Franck </div>
+				<div class="vic"> 2 </div>
+				<div class="pts"> 26 pts</div>
+		</div>
+
+		<div class="joueur " id="Francois" data-score="1">
+				<div class="nom"> François </div>
+				<div class="vic"> 1 </div>
+				<div class="pts"> 13 pts</div>
+		</div>
+
+		<div class="joueur " id="Jérémy/Thomas" data-score="1.1">
+				<div class="nom"> Jérémy  Thomas </div>
+				<div class="vic"> 1 </div>
+				<div class="pts"> 25 pts</div>
+		</div>
+
+		
+		
+	</div>
+	<div  class="btn ">
+		<a href="index.html" >CHAMPIONNAT TETE A TETE</a>
+		</div>
+
+	<script>
+		
+		document.addEventListener("DOMContentLoaded", () => {
+			trierClassement();
+		});
+		
+		function trierClassement() {
+			const conteneur = document.getElementById("classement");
+			const joueurs = Array.from(conteneur.querySelectorAll(".joueur"));
+		
+			joueurs.sort((a, b) => b.dataset.score - a.dataset.score);
+		
+			joueurs.forEach((joueur, index) => {
+				conteneur.appendChild(joueur);
+		
+				// Optionnel : afficher la position
+				joueur.dataset.position = index + 1;
+			});
+		}
+	</script>
+   
+
+	
+ </body>
+</html>

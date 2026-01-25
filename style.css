@@ -1,7 +1,5 @@
 html {
-    margin: 0px;
-     height: 100%;
-    overflow: hidden;
+    
     font-family: "Inter",sans-serif;
     
     }
@@ -10,6 +8,10 @@ body{
 	left: 50%;
 	transform: translate(-50%, 0%);
     background-image: url("background.jpg");
+    background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 .titre{
@@ -47,12 +49,12 @@ border-style: solid;
 border-radius: 5px;
 border-width: 2px;
 border-color: rgb(30, 75, 142);
-
 font-weight: bold;
 display: flex;
-    justify-content: space-between;
-    align-items: center;
+justify-content: space-between;
+align-items: center;
 }
+
 
 .next{text-align: center;
     font-size: 1rem;
@@ -76,7 +78,26 @@ footer{
     align-items: center;
 }
 
+.btn{
+    
+   
+background-color:rgb(30, 75, 142) ;
+margin: 15px;
+padding: 5px;
+border-style: solid;
+border-radius: 5px;
+border-width: 2px;
+border-color: rgb(30, 75, 142);
+font-weight: bold;
+text-align: center;
+}
 
+a {
+  text-decoration: none;
+  color: white;
+  text-align: center;
+
+}
 
 
 
