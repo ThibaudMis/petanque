@@ -56,6 +56,20 @@ justify-content: space-between;
 align-items: center;
 }
 
+.joueur2{
+backdrop-filter: blur(5px);
+margin: 2px;
+padding: 5px;
+border-style: solid;
+border-radius: 5px;
+border-width: 2px;
+border-color: rgb(30, 75, 142);
+font-weight: bold;
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+
 
 .next{text-align: center;
     font-size: 0.85rem;
